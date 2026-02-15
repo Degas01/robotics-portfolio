@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Light theme */
+:root {
+  --background: #ffffff;
+  --foreground: #111827; /* softer than pure black */
+  --accent: #2563eb; /* professional blue */
+}
+
+/* Dark theme support (optional but good) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b0f19;
+    --foreground: #e5e7eb;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
